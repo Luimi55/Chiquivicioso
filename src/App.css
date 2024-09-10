@@ -40,3 +40,38 @@
 .read-the-docs {
   color: #888;
 } */
+
+.sliderContainer {
+  margin-top: 90px;
+}
+
+.custom-height {
+  /*  Adjust this height as needed */
+  height: 60vh;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .custom-height {
+    height: 300px; /* Smaller height for mobile devices */
+  }
+}
+
+@media (min-width: 769px) {
+  .custom-height {
+    height: 500px; /* Default height for larger screens */
+  }
+}
+
+.centerImage1Height {
+  transform: translateY(-5%);
+
+}
+
+.centerImage2Height {
+  transform: translateY(-25%);
+}
+
+.centerImage3Height {
+  transform: translateY(-5%);
+}
