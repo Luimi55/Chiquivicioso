@@ -75,3 +75,8 @@
 .centerImage3Height {
   transform: translateY(-5%);
 }
+
+.biographyContainer {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}

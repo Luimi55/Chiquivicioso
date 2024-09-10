@@ -1,13 +1,18 @@
 import React from 'react'
 import Slider from '../components/Slider'
+import Biography from '../components/Biography'
+import Container from 'react-bootstrap/Container';
+import Art from '../components/Art';
 
 type Props = {}
 
 const Home = (props: Props) => {
   return (
-    <div className='container'>
+    <Container>
       <Slider/>
-    </div>
+      <Biography/>
+      <Art/>
+    </Container>
   )
 }
 
