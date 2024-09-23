@@ -1,8 +1,11 @@
 import React from 'react'
 import Slider from '../components/Slider'
-import Biography from '../components/Biography'
+import Biography from '../components/BiographySection'
 import Container from 'react-bootstrap/Container';
-import Art from '../components/Art';
+import ArtSection from '../components/ArtSection';
+import ArticleSection from '../components/ArticleSection';
+import QuoteSection from '../components/QuoteSection';
+import Footer from '../components/Footer';
 
 type Props = {}
 
@@ -11,7 +14,10 @@ const Home = (props: Props) => {
     <Container>
       <Slider/>
       <Biography/>
-      <Art/>
+      <ArtSection/>
+      <ArticleSection/>
+      <QuoteSection/>
+      <Footer/>
     </Container>
   )
 }

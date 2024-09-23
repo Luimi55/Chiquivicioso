@@ -41,25 +41,30 @@
   color: #888;
 } */
 
+.navLink:hover {
+  color: #f5826f !important;
+}
+
 .sliderContainer {
   margin-top: 90px;
 }
 
 .custom-height {
   /*  Adjust this height as needed */
-  height: 60vh;
+  height: 80vh;
   overflow: hidden;
 }
 
+
 @media (max-width: 768px) {
   .custom-height {
-    height: 300px; /* Smaller height for mobile devices */
+    /* height: 300px; Smaller height for mobile devices */
   }
 }
 
 @media (min-width: 769px) {
   .custom-height {
-    height: 500px; /* Default height for larger screens */
+    /* height: 500px; Default height for larger screens */
   }
 }
 
@@ -77,6 +82,40 @@
 }
 
 .biographyContainer {
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.artContainer {
   padding-top: 5%;
   padding-bottom: 5%;
+  background: #f5826f;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+.artRow {
+  margin-top: 100px;
+}
+
+.text {
+  text-align: justify;
+}
+
+.seeMoreArts {
+  background-color: #f5826f !important;
+  border: 1px solid white !important;
+  color: white !important;
+  padding: 1% !important;
+  transition: top ease 0.5s;
+}
+
+.seeMoreArts:hover{
+  background-color: white !important;
+  border: white !important;
+  color: #f5826f !important;
+  padding: 1% !important;
 }

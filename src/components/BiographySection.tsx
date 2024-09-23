@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
-import biographyImage from '../assets/img/FOTO-ANTICANON.png'
+import biographyImage from '../../public/img/FOTO-ANTICANON.png'
 
 type Props = {};
 
@@ -12,14 +12,14 @@ const Biography = (props: Props) => {
   return (
     <div className="biographyContainer">
       <Row>
-        <Col>
+        <Col xs={6} className="artRow">
             <Image
                 src={biographyImage}
-                width={550}
-                height={350}
+                width={620}
+                height={400}
             />
         </Col>
-        <Col>
+        <Col xs={6} className="d-flex flex-column gap-4 justify-content-center">
         <p className="h1">
             Conoce a Chiqui Vicioso
         </p>

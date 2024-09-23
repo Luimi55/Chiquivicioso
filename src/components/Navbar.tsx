@@ -3,7 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo from '../assets/img/chiqui-vicioso-1-300x68.png'
+import logo from '../../public/img/chiqui-vicioso-1-300x68.png'
+import facebook from '../../public/img/facebook.png'
 
 type Props = {}
 
@@ -17,22 +18,24 @@ const NavbarMenu = (props: Props) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav justify-content-end">
           <Nav className="flex-grow-1  justify-content-end gap-4 h5">
-            <Nav.Link href="#home">
+            <Nav.Link className='navLink' href="/">
                 Inicio
             </Nav.Link>
-            <Nav.Link href="#biography">
+            <Nav.Link className='navLink' href="#biography">
                 Biografía
             </Nav.Link>
-            <Nav.Link  href="#art">
+            <Nav.Link className='navLink'  href="#art">
                 Obras
             </Nav.Link>
-            <Nav.Link  href="#opinion">
-                Opinión
+            <Nav.Link className='navLink'  href="#articles">
+              Artículos
             </Nav.Link>
-            <Nav.Link  href="#multimedia">
+            <Nav.Link className='navLink'  href="#multimedia">
                 Multimedia
             </Nav.Link>
-            <Nav.Link  href="https://www.facebook.com/ChiquiViciosoRD">
+            <Nav.Link className='text-primary'  href="https://www.facebook.com/ChiquiViciosoRD">
+              <Image src={facebook} width={20} height={20}/>
+              <span>  </span>
                 Sigueme
             </Nav.Link>
           </Nav>
