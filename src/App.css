@@ -3,6 +3,8 @@
   /* margin: 0 auto; */
   /* padding: 2rem; */
   /* text-align: center; */
+  overflow-x: hidden;
+  margin: 0;
 }
 
 /* .logo {
@@ -41,31 +43,23 @@
   color: #888;
 } */
 
+html {
+
+  background-color: black;
+}
+
 .navLink:hover {
   color: #f5826f !important;
 }
 
-.sliderContainer {
+.generalContainer {
   margin-top: 90px;
 }
 
-.custom-height {
+.sliderheight {
   /*  Adjust this height as needed */
   height: 80vh;
   overflow: hidden;
-}
-
-
-@media (max-width: 768px) {
-  .custom-height {
-    /* height: 300px; Smaller height for mobile devices */
-  }
-}
-
-@media (min-width: 769px) {
-  .custom-height {
-    /* height: 500px; Default height for larger screens */
-  }
 }
 
 .centerImage1Height {
@@ -84,6 +78,7 @@
 .biographyContainer {
   padding-top: 8%;
   padding-bottom: 8%;
+  font-size: 19px;
 }
 
 .artContainer {
@@ -118,4 +113,79 @@
   border: white !important;
   color: #f5826f !important;
   padding: 1% !important;
+}
+
+.screenTitleHeight {
+  height: 30vh;
+  overflow: hidden;
+  position: relative; /* Make the parent container relative */
+}
+
+.centerScreenTitleImage{
+  transform: translateY(-8%);
+}
+
+.overlayScreenTitleImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  z-index: 1; /* Ensure the overlay is on top of the image */
+}
+
+.textScreenTitleImage {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  z-index: 1; /* Ensure the overlay is on top of the image */
+  font-size: 50px;
+}
+
+.biographyContent {
+  /* margin-top: 5%; */
+  background-color: #edede9;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 22px;
+}
+
+.biographyOverlayImage{
+  position: absolute;
+  top: 41%;
+  left: 38%;
+  width: 200px;
+  height: 200px;
+}
+
+
+/* TABLET */
+@media (max-width: 1200px) {
+  .sliderheight {
+    height: 40vh; 
+  }
+
+  .biographyOverlayImage{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .sliderheight {
+    height: 30vh; 
+  }
+
+  .biographyOverlayImage{
+    position: absolute;
+    top: 43%;
+    left: 75%;
+    width: 100px;
+    height: 100px;
+  }
 }

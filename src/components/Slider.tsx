@@ -9,10 +9,10 @@ type Props = {};
 
 const Slider = (props: Props) => {
   return (
-    <div className="sliderContainer">
+    <div>
       <Carousel 
         fade
-        className="w-100 custom-height"
+        className="w-100 sliderheight"
       >
         <Carousel.Item>
             <Image 

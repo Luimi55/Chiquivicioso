@@ -11,7 +11,7 @@ type Props = {}
 
 const Home = (props: Props) => {
   return (
-    <Container>
+    <Container className='generalContainer'>
       <Slider/>
       <Biography/>
       <ArtSection/>

@@ -12,7 +12,7 @@ const NavbarMenu = (props: Props) => {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" fixed='top'>
       <Container>
-        <Navbar.Brand href="#home">         
+        <Navbar.Brand href="/">         
             <Image src={logo} width={200} height={60} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -21,7 +21,7 @@ const NavbarMenu = (props: Props) => {
             <Nav.Link className='navLink' href="/">
                 Inicio
             </Nav.Link>
-            <Nav.Link className='navLink' href="#biography">
+            <Nav.Link className='navLink' href="/biography">
                 Biografía
             </Nav.Link>
             <Nav.Link className='navLink'  href="#art">
