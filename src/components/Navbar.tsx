@@ -3,8 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Image from 'react-bootstrap/Image';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo from '../../public/img/chiqui-vicioso-1-300x68.png'
-import facebook from '../../public/img/facebook.png'
+import logo from '/img/chiqui-vicioso-1-300x68.png'
+import facebook from '/img/facebook.png'
 
 type Props = {}
 

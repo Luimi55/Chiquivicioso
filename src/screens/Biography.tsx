@@ -4,9 +4,9 @@ import ScreenTitle from "../components/ScreenTitle";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
-import image1 from "../../public/img/Vicioso-BW-600x600.png";
-import image2 from "../../public/img/CHIQUI JOVEN.png"
-import image3 from "../../public/img/Flor dibujo.png"
+import image1 from "/img/Vicioso-BW-600x600.png";
+import image2 from "/img/CHIQUI JOVEN.png"
+import image3 from "/img/Flor dibujo.png"
 
 type Props = {};
 
