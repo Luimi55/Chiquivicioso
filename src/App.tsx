@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Home from './screens/Home'
 import Biography from './screens/Biography'
+import Art from './screens/Art'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/' Component={Home}/>
           <Route path='/biography' Component={Biography}/>
+          <Route path='/art' Component={Art}/>
         </Routes>
       </BrowserRouter>
     </>

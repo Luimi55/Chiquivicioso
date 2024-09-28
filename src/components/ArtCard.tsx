@@ -4,17 +4,24 @@ import Col from "react-bootstrap/Col";
 import Art from '../models/Art';
 
 type Props = {
-  art: Art
+  art: Art,
+  light: boolean
 }
 
 const ArtCard = (props: Props) => {
-
-  const {art} = props
-
+  const {art, light} = props
+console.log(art.pdf)
   return (
-    <Col className='d-flex flex-column align-items-center'>
-      <Image src={art.imagePath} width={180} height={300}/>
-      <p className='text-light text-center'>{art.caption}</p>
+    <Col>
+      <a 
+        className='d-flex flex-column align-items-center' 
+        target="_blank" 
+        style={{textDecoration:'none'}} 
+        href={art.pdf}
+      >
+        <Image src={art.image} width={180} height={300}/>
+        <p className={`text-${light ? "light":"dark"} text-center`}>{art.caption}</p>
+      </a>
     </Col>
   )
 }

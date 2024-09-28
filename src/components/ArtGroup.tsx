@@ -6,17 +6,19 @@ import Image from 'react-bootstrap/Image';
 import ArtCard from './ArtCard';
 
 type Props = {
-    arts: Art[]
+    arts: Art[],
+    light: boolean,
+    classname?: string
 }
 
 const ArtGroup = (props: Props) => {
   
-  const {arts} = props
+  const {arts, light,classname} = props
 
   return (
-    <Row className='gx-5'>
+    <Row className={`gx-5 ${classname}`}>
       {arts.map((art, key) => {return (
-        <ArtCard key={key} art={art}/>
+        <ArtCard key={key} art={art} light={light}/>
       )})}
     </Row>
   )

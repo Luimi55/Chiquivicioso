@@ -7,6 +7,7 @@ import art1 from '../assets/img/content.jpeg'
 import art2 from '../assets/img/chiqui-vicioso-antologicc81a.png'
 import art3 from '../assets/img/513EWV8KRPL.jpg'
 import art4 from '../assets/img/51PDWB0PR2L.jpg'
+import { useNavigate } from "react-router-dom";
 import ArtGroup from './ArtGroup';
 import artData from '../data/arts.json'
 
@@ -14,14 +15,15 @@ type Props = {}
 
 const Art = (props: Props) => {
     const [data] = useState(artData.slice(0, 4))
+    const navigate = useNavigate();
 
   return (
     <div className='artContainer'>
         <p className='h2 text-light text'>
             Obras
         </p>
-        <ArtGroup arts={data}/>
-        <Button className='seeMoreArts'>
+        <ArtGroup arts={data} light={true}/>
+        <Button className='seeMoreArts' onClick={()=>navigate("/art")}>
             Ver más obras
         </Button>
         {/* <Row className='gx-5'>

@@ -24,7 +24,7 @@ const NavbarMenu = (props: Props) => {
             <Nav.Link className='navLink' href="/biography">
                 Biografía
             </Nav.Link>
-            <Nav.Link className='navLink'  href="#art">
+            <Nav.Link className='navLink'  href="/art">
                 Obras
             </Nav.Link>
             <Nav.Link className='navLink'  href="#articles">

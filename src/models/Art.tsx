@@ -1,5 +1,6 @@
 interface Art {
-    imagePath: string,
+    pdf:string,
+    image: string,
     caption: string
 }
 
