@@ -10,7 +10,6 @@ type Props = {
 
 const ArtCard = (props: Props) => {
   const {art, light} = props
-console.log(art.pdf)
   return (
     <Col>
       <a 
