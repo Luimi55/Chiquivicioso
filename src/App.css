@@ -159,6 +159,35 @@ html {
   height: 200px;
 }
 
+.articleContainer {
+  padding-top: 8%;
+  padding-bottom: 8%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.articleImages {
+  height: 99%;
+  width: 100%;
+  position: relative;
+}
+
+.test {
+  padding: 10px;
+  box-sizing: border-box;  /* ensures padding/border are included in width/height */
+}
+
+
+
+
+
+
+
+
+
+
 
 /* TABLET */
 @media (max-width: 1200px) {

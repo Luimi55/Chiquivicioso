@@ -1,23 +1,20 @@
 import React from 'react'
-import Art from '../models/Art'
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from 'react-bootstrap/Image';
-import ArtCard from './ArtCard';
+import Article from '../models/Article'
+import Row from 'react-bootstrap/Row'
+import ArticleCard from './ArticleCard'
 
 type Props = {
-    arts: Art[],
-    light: boolean,
+    articles: Article[],
     classname?: string
 }
 
-const ArtGroup = (props: Props) => {
-  
-  const {arts, light,classname} = props
+const ArticleGroup = (props: Props) => {
+
+    const {articles, classname} = props
 
   return (
     <Row className={`gx-5 ${classname}`}>
-      {arts.sort((a,b)=>{
+      {articles.sort((a,b)=>{
           let date1 : Date = new Date(a.date); 
           let date2 : Date = new Date(b.date); 
           if(date1.getTime() > date2.getTime()){
@@ -30,10 +27,10 @@ const ArtGroup = (props: Props) => {
         
         return 0;
       }).map((art, key) => {return (
-        <ArtCard key={key} art={art} light={light}/>
+        <ArticleCard key={key} article={art}/>
       )})}
     </Row>
   )
 }
 
-export default ArtGroup
+export default ArticleGroup
