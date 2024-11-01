@@ -4,7 +4,9 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <div>Footer</div>
+    <div className='footerContainer'>
+      <span >Designed by Nexotech. Copyright ®️ 2024-2025 All Rights Reserved.</span>
+    </div>
   )
 }
 

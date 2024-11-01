@@ -11,11 +11,11 @@ const Articles = (props: Props) => {
 
   return (
     <div className='articleContainer'>
-      <p className='h2 text-danger mb-5'>
+      <p className='h2 text-danger mb-4'>
         Artículos
       </p>
-      <ArticleGroup articles={data}/>
-      <Button>Ver más artículos</Button>
+      <ArticleGroup classname='mb-4' articles={data}/>
+      <Button className='btn btn-danger'>Ver más artículos</Button>
     </div>
   )
 }

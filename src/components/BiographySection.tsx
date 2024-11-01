@@ -25,14 +25,13 @@ const Biography = (props: Props) => {
             />
         </Col>
         <Col xs={12} sm={6} className="d-flex flex-column gap-4 justify-content-center">
-        <p className="h1">
-            Conoce a Chiqui Vicioso
+        <p className="animated-text">
+          <span></span> Chiqui Vicioso 
         </p>
         <p>
         Santo Domingo, 1948. Poeta, ensayista y dramaturga, licenciada en Sociología e Historia de América Latina de Brooklyn College,
          City University of New York;  Maestría en Educación, de  la Universidad de Columbia y estudios en Administración Cultural,
-          de la Fundación Getulio Vargas, de Río de Janeiro. Con obras destacadas como Volver a vivir: ensayos sobre Nicaragua, Wish-ky Sour 
-          Salomé Ureña de Henríquez (1859-1897): a cien años de su magisterio.
+          de la Fundación Getulio Vargas, de Río de Janeiro. 
         </p>
         <Button className="btn btn-danger" onClick={()=>navigate("/biography")}>
             Leer más

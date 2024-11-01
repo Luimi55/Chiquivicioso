@@ -82,14 +82,41 @@ html {
 }
 
 .artContainer {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   background: #f5826f;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   row-gap: 60px;
+}
+
+.quoteContainer {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background: #f9fafb;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  margin-bottom:9%;
+}
+
+.quote {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 45px;
+}
+
+.bigQuoteMark {
+  font-size: 80px;
+}
+
+.test {
+  width: 25%;
+  word-wrap: break-word;
 }
 
 .artRow {
@@ -160,8 +187,8 @@ html {
 }
 
 .articleContainer {
-  padding-top: 8%;
-  padding-bottom: 8%;
+  padding-top: 7%;
+  padding-bottom: 7%;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -177,6 +204,54 @@ html {
 .test {
   padding: 10px;
   box-sizing: border-box;  /* ensures padding/border are included in width/height */
+}
+
+.animated-text {
+  font-size: 45px;
+  font-weight: bold;
+  min-width: 280px;
+}
+
+.animated-text span{
+  position: relative;
+}
+
+.animated-text span::before{
+  content: "Conoce a";
+  color: #ff7f50;
+  animation: words 20s infinite;
+}
+
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: white;
+  border-left: 2px solid #ff7f50;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to{
+      border-left: 2px solid #ff7f5000;
+  }
+}
+
+@keyframes typing {
+  10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 0;
+  }
+  5%,20%,25%,40%,45%,60%,65%,80%,85%{
+      width: calc(100% + 8px);
+  }
+}
+
+.footerContainer {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background: #f9fafb;
 }
 
 
@@ -210,11 +285,44 @@ html {
     height: 30vh; 
   }
 
+  .biographyContainer {
+    padding-top: 8%;
+    padding-bottom: 8%;
+    font-size: 19px;
+    margin-top:10%;
+    margin-bottom:10%
+  }
+
+  .artContainer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: #f5826f;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    margin-top:10%;
+    margin-bottom:10%
+  }
+
   .biographyOverlayImage{
     position: absolute;
     top: 43%;
     left: 75%;
     width: 100px;
     height: 100px;
+  }
+
+  .quoteContainer {
+    padding-top: 6%;
+    padding-bottom: 6%;
+    background: #f9fafb;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    margin-top:10%;
+    margin-bottom:10%;
   }
 }

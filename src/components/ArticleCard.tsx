@@ -22,8 +22,8 @@ const ArticleCard = (props: Props) => {
             href={article.url}
         >
             <Image src={article.image} 
-                width={400}
-                height={350}
+                width={350}
+                height={300}
             />
             <p className='h5 text-dark'>{article.title}</p>
             <p className='text-dark'>{article.content}</p>
