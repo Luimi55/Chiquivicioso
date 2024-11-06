@@ -30,7 +30,9 @@ const Art = (props: Props) => {
         </p>
 
         <ArtGroup arts={data} light={true}/>
-        <Button className='seeMoreArts' onClick={()=>navigate("/art")}>
+        <Button className='seeMoreArts' 
+        //onClick={()=>navigate("/art")}
+        >
             Ver más obras
         </Button>
         {/* <Row className='gx-5'>

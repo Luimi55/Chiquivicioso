@@ -33,7 +33,9 @@ const Biography = (props: Props) => {
          City University of New York;  Maestría en Educación, de  la Universidad de Columbia y estudios en Administración Cultural,
           de la Fundación Getulio Vargas, de Río de Janeiro. 
         </p>
-        <Button className="btn btn-danger" onClick={()=>navigate("/biography")}>
+        <Button className="btn btn-danger" 
+        // onClick={()=>navigate("/biography")}
+        >
             Leer más
         </Button>
         </Col>

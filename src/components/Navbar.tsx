@@ -21,16 +21,16 @@ const NavbarMenu = (props: Props) => {
             <Nav.Link className='navLink' href="/">
                 Inicio
             </Nav.Link>
-            <Nav.Link className='navLink' href="/biography">
+            <Nav.Link className='navLink' href="/">
                 Biografía
             </Nav.Link>
-            <Nav.Link className='navLink'  href="/art">
+            <Nav.Link className='navLink'  href="/">
                 Obras
             </Nav.Link>
-            <Nav.Link className='navLink'  href="/article">
+            <Nav.Link className='navLink'  href="/">
               Artículos
             </Nav.Link>
-            <Nav.Link className='navLink'  href="/multimedia">
+            <Nav.Link className='navLink'  href="/">
                 Multimedia
             </Nav.Link>
             <Nav.Link className='text-primary'  href="https://www.facebook.com/ChiquiViciosoRD">
