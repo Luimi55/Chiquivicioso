@@ -1,4 +1,3 @@
-import React from "react";
 import { Container } from "react-bootstrap";
 import ScreenTitle from "../components/ScreenTitle";
 import Row from "react-bootstrap/Row";
@@ -8,9 +7,8 @@ import image1 from "/img/Vicioso-BW-600x600.png";
 import image2 from "/img/CHIQUI JOVEN.png"
 import image3 from "/img/Flor dibujo.png"
 
-type Props = {};
 
-const Biography = (props: Props) => {
+const Biography = () => {
   return (
     <Container className="generalContainer">
       <ScreenTitle image={image1} title="Biografía" />

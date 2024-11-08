@@ -1,6 +1,3 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './screens/Home'
@@ -17,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path='/' Component={Home}/>
+          <Route path='/Chiquivicioso' Component={Home}/>
           <Route path='/biography' Component={Biography}/>
           <Route path='/art' Component={Art}/>
           <Route path='/article' Component={Article}/>

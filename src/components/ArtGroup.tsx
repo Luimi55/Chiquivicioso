@@ -1,8 +1,5 @@
-import React from 'react'
 import Art from '../models/Art'
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from 'react-bootstrap/Image';
 import ArtCard from './ArtCard';
 
 type Props = {

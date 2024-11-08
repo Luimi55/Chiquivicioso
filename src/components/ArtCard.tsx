@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'react-bootstrap/Image';
 import Col from "react-bootstrap/Col";
 import Art from '../models/Art';
@@ -16,9 +15,9 @@ const ArtCard = (props: Props) => {
         className='d-flex flex-column align-items-center' 
         target="_blank" 
         style={{textDecoration:'none'}} 
-        href={art.pdf}
+        href={'/Chiquivicioso'+art.pdf}
       >
-        <Image src={art.image} width={180} height={300}/>
+        <Image src={'/Chiquivicioso'+art.image} width={180} height={300}/>
         <p className={`text-${light ? "light":"dark"} text-center`}>{art.caption}</p>
       </a>
     </Col>

@@ -1,8 +1,6 @@
-import React from 'react'
 
-type Props = {}
 
-const Quote = (props: Props) => {
+const Quote = () => {
   return (
     <div className='quoteContainer'>
         <p className='quote'>

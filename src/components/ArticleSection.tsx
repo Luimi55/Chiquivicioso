@@ -1,12 +1,11 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import articuleData from '../data/articles.json'
 import ArticleGroup from './ArticleGroup'
 import Button from 'react-bootstrap/Button';
 
 
-type Props = {}
 
-const Articles = (props: Props) => {
+const Articles = () => {
   const [data] = useState(articuleData.slice(0, 3))
 
   return (

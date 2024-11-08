@@ -1,13 +1,11 @@
-import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import Image from 'react-bootstrap/Image';
 import image1 from '/img/WhatsApp Image 2024-09-09 at 17.40.15_65bdda0b.jpg'
 import image2 from '/img/35082742_1075765449228968_2894998435008610304_n.jpg'
 import image3 from '/img/Vicioso-BW-600x600.png'
 
-type Props = {};
 
-const Slider = (props: Props) => {
+const Slider = () => {
   return (
     <div>
       <Carousel 

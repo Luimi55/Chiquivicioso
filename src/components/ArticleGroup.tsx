@@ -1,4 +1,3 @@
-import React from 'react'
 import Article from '../models/Article'
 import Row from 'react-bootstrap/Row'
 import ArticleCard from './ArticleCard'

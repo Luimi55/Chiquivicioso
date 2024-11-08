@@ -1,17 +1,12 @@
-import React from "react";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
-import { useNavigate } from "react-router-dom";
 import biographyImage from '/img/FOTO-ANTICANON.png'
 
-type Props = {};
 
-const Biography = (props: Props) => {
+const Biography = () => {
 
-  const navigate = useNavigate();
 
   return (
     <div className="biographyContainer">

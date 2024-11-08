@@ -1,4 +1,3 @@
-import React from 'react'
 import Article from '../models/Article'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image';
