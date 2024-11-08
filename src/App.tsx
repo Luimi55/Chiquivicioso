@@ -7,6 +7,7 @@ import Home from './screens/Home'
 import Biography from './screens/Biography'
 import Article from './screens/Article'
 import Art from './screens/Art';
+import Multimedia from './screens/Multimedia';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/biography' Component={Biography}/>
           <Route path='/art' Component={Art}/>
           <Route path='/article' Component={Article}/>
+          <Route path='/multimedia' Component={Multimedia}/>
         </Routes>
       </BrowserRouter>
     </>
