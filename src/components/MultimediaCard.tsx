@@ -16,7 +16,7 @@ const MultimediaCard = (props: Props) => {
         style={{textDecoration:'none'}} 
         href={multimedia.image}
       >
-        <Image src={multimedia.image} width={180} height={300}/>
+        <Image src={multimedia.image} width={300} height={300}/>
       </a>
     </Col>
   )

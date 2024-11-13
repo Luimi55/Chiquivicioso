@@ -33,16 +33,16 @@ cursó sus estudios en Estados Unidos y Brasil. Licenciada en Sociología e Hist
 Nueva York, Maestría en Educación por la Universidad de Columbia y Postgrado en Administración Cultural por la Fundación Getúlio 
 Vargas (Brasil). 
             </p>
-
-          </Col>
-        </Row>
-        <Row className="mt-4">
-          <Col xs={12}>
-          <p>
+            <p>
             Ha sido reconocida con el galardón Anacaona de Oro en Literatura y la Medalla de Oro al Mérito a la Mujer en 1992.
 Con obras destacadas como <b>Volver a vivir: ensayos sobre Nicaragua, Wish-ky Sour, Salomé Ureña de Henríquez (1859-1897): a cien años
  de su magisterio</b>.
             </p>
+          </Col>
+        </Row>
+        <Row className="mt-4">
+          <Col xs={12}>
+
           <p>Hija de <b>Juan Antonio Vicioso Contín y María Luisa Sánchez</b>. Licenciada en Sociología e Historia de América Latina por The City University of New York (Brooklyn College). Hizo una maestría en 
 Diseño de Programas Educativos en la Universidad de Columbia y estudió Administración de Proyectos Culturales en la Fundación 
 Getúlio Vargas, de Río de Janeiro, Brasil.</p>

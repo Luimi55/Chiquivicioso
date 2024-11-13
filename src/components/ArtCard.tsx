@@ -11,7 +11,7 @@ type Props = {
 const ArtCard = (props: Props) => {
   const {art, light} = props
   return (
-    <Col>
+    <Col className='d-flex flex-column align-items-stretch'>
       <a 
         className='d-flex flex-column align-items-center' 
         target="_blank" 
