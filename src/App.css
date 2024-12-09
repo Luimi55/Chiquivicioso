@@ -100,7 +100,7 @@ html {
   align-items: center;
   text-align: center;
   display: flex;
-  margin-bottom:9%;
+  margin-top: 5%;
 }
 
 .quote {
@@ -110,8 +110,23 @@ html {
   font-size: 45px;
 }
 
-.bigQuoteMark {
+/* .bigQuoteMark {
   font-size: 80px;
+  color:#f5826f;
+} */
+
+.bigQuoteMarkOpen::before {
+  font-size: 90px;
+  color:#f5826f;
+  content: "\201c";
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bigQuoteMarkClose::before {
+  font-size: 90px;
+  color:#f5826f;
+  content: "\201D";
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .test {

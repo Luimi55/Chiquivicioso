@@ -15,8 +15,8 @@ const Home = (props: Props) => {
       <Slider/>
       <Biography/>
       <ArtSection/>
-      <ArticleSection/>
       <QuoteSection/>
+      <ArticleSection/>
       <Footer/>
     </Container>
   )
